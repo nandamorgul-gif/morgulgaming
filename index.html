@@ -115,75 +115,185 @@
 		<!-- end about -->
 
 		<!-- start pricing -->
-		<div id="pricing" class="section">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 wow bounceIn">
-						<h2 class="text-uppercase">Our Pricing Website</h2>
-					</div>
-					<div class="col-md-4 wow fadeIn" data-wow-delay="0.6s">
-						<div class="pricing text-uppercase">
-							<div class="pricing-title">
-								<h4>Company Profile</h4>
-								<p>Rp.1.500.000,-</p>
-								<small class="text-lowercase"></small>
-							</div>
-							<ul>
-								<li>Design Menarik</li>
-								<li>5 Halaman Sub</li>
-								<li>3 Kali Koreksi</li>
-								<li>Optimasi Website</li>
-								<li>Mobile Ready</li>
-								<li>Optimasi Mesin Pencari</li>
-								<li>Bandwith 30 GB</li>
-								<li>Support 24/7</li>
-							</ul>
-							<a href="#contact" class="btn btn-primary text-uppercase">Pesan</a>
-						</div>
-					</div>
-					<div class="col-md-4 wow fadeIn" data-wow-delay="0.6s">
-						<div class="pricing active text-uppercase">
-							<div class="pricing-title">
-								<h4>Katalog</h4>
-								<p>Rp.2.000.000,-</p>
-								<small class="text-lowercase"></small>
-							</div>
-							<ul>
-								<li>Design Menarik</li>
-								<li>5 Halaman Sub</li>
-								<li>3 Kali Koreksi</li>
-								<li>Optimasi Website</li>
-								<li>Mobile Ready</li>
-								<li>Optimasi Mesin Pencari</li>
-								<li>Bandwith 30 GB</li>
-								<li>Support 24/7</li>
-							</ul>
-							<a href="#contact" class="btn btn-primary text-uppercase">Pesan</a>
-						</div>
-					</div>
-					<div class="col-md-4 wow fadeIn" data-wow-delay="0.6s">
-						<div class="pricing text-uppercase">
-							<div class="pricing-title">
-								<h4>Online Shop</h4>
-								<p>Rp.1.000.000,-</p>
-								<small class="text-lowercase"></small>
-							</div>
-							<ul>
-								<li>Design Menarik</li>
-								<li>5 Halaman Sub</li>
-								<li>3 Kali Koreksi</li>
-								<li>Optimasi Website</li>
-								<li>Mobile Ready</li>
-								<li>Optimasi Mesin Pencari</li>
-								<li>Bandwith 30 GB</li>
-								<li>Support 24/7</li>
-							</ul>
-							<a href="#contact" class="btn btn-primary text-uppercase">Pesan</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+  <header class="text-center py-10 bg-slate-900 shadow-md">
+    <h1 class="text-5xl font-bold mb-2" data-aos="fade-down">Rakit PC Gaming Lengkap 🚀</h1>
+    <p class="text-gray-300 max-w-xl mx-auto" data-aos="fade-up">
+      Pilih komponen terbaik sesuai kebutuhanmu dan dapatkan jasa rakit + install Windows & software.
+    </p>
+  </header>
+
+  <!-- Paket PC -->
+  <section class="max-w-5xl mx-auto px-4 py-16" id="paket" data-aos="fade-up">
+    <h2 class="text-4xl font-bold mb-10 text-center">Paket PC</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Middle Range -->
+      <div class="bg-slate-800 rounded-xl p-6 shadow-lg">
+        <h3 class="text-2xl font-semibold mb-4">Middle Range</h3>
+        <ul class="list-disc list-inside space-y-2 text-gray-300">
+          <li>CPU: Ryzen 5 5600X / Intel Core i5-12400F</li>
+          <li>GPU: RTX 3060 Ti / Radeon RX 6600 XT</li>
+          <li>RAM: 16GB DDR4 3200MHz</li>
+          <li>Storage: 1TB NVMe SSD</li>
+          <li>Motherboard: B550 / B660 (ATX/M-ATX)</li>
+          <li>PSU: 650W 80+ Bronze</li>
+          <li>Estimasi FPS: 1080p ~120, 1440p ~70, 4K ~40</li>
+          <li>Jasa Rakit + Install Windows & Software</li>
+        </ul>
+        <p class="mt-6 font-semibold text-cyan-400">Estimasi Harga mulai Rp 15.000.000</p>
+      </div>
+
+      <!-- High Range -->
+      <div class="bg-slate-800 rounded-xl p-6 shadow-lg">
+        <h3 class="text-2xl font-semibold mb-4">High Range</h3>
+        <ul class="list-disc list-inside space-y-2 text-gray-300">
+          <li>CPU: Ryzen 9 7900X / Intel Core i9-13900K</li>
+          <li>GPU: RTX 4070 Ti / Radeon RX 7900 XT</li>
+          <li>RAM: 32GB DDR5 6000MHz</li>
+          <li>Storage: 2TB NVMe Gen4 SSD</li>
+          <li>Motherboard: X670 / Z790 (ATX)</li>
+          <li>PSU: 850W 80+ Gold / Platinum</li>
+          <li>Estimasi FPS: 1080p ~180, 1440p ~140, 4K ~90</li>
+          <li>Jasa Rakit + Install Windows & Software</li>
+        </ul>
+        <p class="mt-6 font-semibold text-cyan-400">Estimasi Harga mulai Rp 40.000.000</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Konfigurator -->
+  <section id="configurator" class="max-w-5xl mx-auto px-4 py-16" data-aos="zoom-in">
+    <h2 class="text-4xl font-bold mb-10 text-center">Konfigurasi PC Interaktif</h2>
+    <form class="space-y-8 bg-slate-800 p-8 rounded-3xl shadow-xl">
+
+      <!-- CPU -->
+      <div>
+        <label for="cpu" class="block mb-2 font-semibold">Pilih CPU</label>
+        <select id="cpu" class="w-full rounded-lg bg-slate-900 p-3 text-white" onchange="hitungCustom()">
+          <!-- AMD -->
+          <optgroup label="AMD Ryzen">
+            <option value="2500000-60-90-50">Ryzen 5 5600X – Rp 2.500.000</option>
+            <option value="4200000-85-120-70">Ryzen 7 5800X – Rp 4.200.000</option>
+            <option value="7500000-100-140-90">Ryzen 9 7900X – Rp 7.500.000</option>
+          </optgroup>
+          <!-- Intel -->
+          <optgroup label="Intel Core">
+            <option value="2300000-55-85-40">Intel i5-12400F – Rp 2.300.000</option>
+            <option value="4000000-80-110-65">Intel i7-12700K – Rp 4.000.000</option>
+            <option value="8500000-110-150-95">Intel i9-13900K – Rp 8.500.000</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <!-- GPU -->
+      <div>
+        <label for="gpu" class="block mb-2 font-semibold">Pilih GPU</label>
+        <select id="gpu" class="w-full rounded-lg bg-slate-900 p-3 text-white" onchange="hitungCustom()">
+          <!-- Nvidia -->
+          <optgroup label="Nvidia">
+            <option value="4000000-70-55-30">GTX 1660 Super – Rp 4.000.000</option>
+            <option value="6500000-100-85-55">RTX 3060 Ti – Rp 6.500.000</option>
+            <option value="12000000-140-110-75">RTX 4070 Ti – Rp 12.000.000</option>
+          </optgroup>
+          <!-- Radeon -->
+          <optgroup label="Radeon">
+            <option value="3500000-65-50-28">RX 6600 XT – Rp 3.500.000</option>
+            <option value="7000000-105-90-60">RX 7900 XT – Rp 7.000.000</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <!-- RAM -->
+      <div>
+        <label for="ram" class="block mb-2 font-semibold">Pilih RAM</label>
+        <select id="ram" class="w-full rounded-lg bg-slate-900 p-3 text-white" onchange="hitungCustom()">
+          <optgroup label="DDR4">
+            <option value="800000-0-0-0">16GB DDR4 – Rp 800.000</option>
+            <option value="1600000-10-15-5">32GB DDR4 – Rp 1.600.000</option>
+          </optgroup>
+          <optgroup label="DDR5">
+            <option value="2000000-15-20-10">16GB DDR5 – Rp 2.000.000</option>
+            <option value="3500000-25-30-15">32GB DDR5 – Rp 3.500.000</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <!-- Storage -->
+      <div>
+        <label for="storage" class="block mb-2 font-semibold">Pilih Storage</label>
+        <select id="storage" class="w-full rounded-lg bg-slate-900 p-3 text-white" onchange="hitungCustom()">
+          <option value="600000-0-0-0">512GB SSD – Rp 600.000</option>
+          <option value="1200000-5-5-3">1TB NVMe SSD – Rp 1.200.000</option>
+          <option value="2500000-10-10-7">2TB NVMe Gen4 – Rp 2.500.000</option>
+        </select>
+      </div>
+
+      <!-- Form Factor -->
+      <div>
+        <label for="formFactor" class="block mb-2 font-semibold">Pilih Form Factor Motherboard</label>
+        <select id="formFactor" class="w-full rounded-lg bg-slate-900 p-3 text-white" onchange="updateMotherboardOptions()" required>
+          <option value="ATX">ATX</option>
+          <option value="M-ATX">M-ATX</option>
+          <option value="Mini-ITX">Mini-ITX</option>
+        </select>
+      </div>
+
+      <!-- Motherboard -->
+      <div>
+        <label for="motherboard" class="block mb-2 font-semibold">Pilih Motherboard</label>
+        <select id="motherboard" class="w-full rounded-lg bg-slate-900 p-3 text-white" required>
+          <!-- Opsi diisi dinamis -->
+        </select>
+      </div>
+
+      <!-- PSU -->
+      <div>
+        <label for="psu" class="block mb-2 font-semibold">Pilih PSU</label>
+        <select id="psu" class="w-full rounded-lg bg-slate-900 p-3 text-white" required>
+          <!-- Opsi diisi dinamis -->
+        </select>
+      </div>
+
+      <!-- Jasa -->
+      <div>
+        <label class="block mb-2 font-semibold">Pilih Jasa Tambahan</label>
+        <select id="jasa" class="w-full rounded-lg bg-slate-900 p-3 text-white" onchange="hitungCustom()">
+          <option value="0">Tidak Ada</option>
+          <option value="500000">Jasa Rakit PC – Rp 500.000</option>
+          <option value="600000">Jasa Install Windows – Rp 600.000</option>
+          <option value="900000">Jasa Rakit + Install Windows & Software – Rp 900.000</option>
+        </select>
+      </div>
+
+      <!-- Estimasi Harga dan FPS -->
+      <div class="bg-slate-900 p-6 rounded-xl space-y-3">
+        <p class="text-xl font-bold text-white">Estimasi Harga: <span id="totalHarga">Rp 0</span></p>
+        <p class="text-gray-300">FPS 1080p: <span id="fps1080">0 FPS</span></p>
+        <p class="text-gray-300">FPS 1440p: <span id="fps1440">0 FPS</span></p>
+        <p class="text-gray-300">FPS 4K: <span id="fps4k">0 FPS</span></p>
+      </div>
+
+      <!-- Pembayaran -->
+      <div>
+        <label class="block mb-2 font-semibold">Metode Pembayaran</label>
+        <select id="payment" class="w-full rounded-lg bg-slate-900 p-3 text-white" onchange="updateWA()">
+          <option value="Cash">Cash</option>
+          <option value="Transfer">Transfer</option>
+          <option value="QRIS">QRIS</option>
+        </select>
+      </div>
+
+      <!-- Buttons -->
+      <div class="flex flex-col md:flex-row gap-4 mt-6">
+        <button type="button" onclick="hitungCustom()" class="bg-cyan-500 text-black px-6 py-3 rounded-3xl font-semibold hover:scale-105 transition w-full md:w-auto">
+          Hitung Sekarang
+        </button>
+        <a id="waButton" target="_blank" rel="noopener noreferrer"
+          class="bg-green-500 text-black px-6 py-3 rounded-3xl font-semibold hover:scale-105 transition text-center w-full md:w-auto">
+          Kirim WA Pesanan
+        </a>
+      </div>
+    </form>
+  </section>
 		<!-- end pricing -->
 
 		<!-- start contact -->
@@ -248,4 +358,5 @@
 		<script src="js/custom.js"></script>
 	</body>
 <source src="http://emhaindosukses.net/music/WhatDoYouMean.m4a" type="audio/mpeg">
+
 </html>
